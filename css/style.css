@@ -93,7 +93,6 @@ body{
 
 .first-screen__test{
   display: flex;
-  align-items: center;
   justify-content: center;
   /* max-width: 479px; */
   width: 100%;
@@ -129,7 +128,7 @@ body{
   animation: move-to-left-test 1s linear forwards;
   animation-delay: .3s;
   overflow: hidden;
-  padding: 30px;
+  padding: 10px;
 }
 .first-screen__test-inner .line{
   width: 250px;
@@ -140,7 +139,7 @@ body{
 .first-screen__test-inner .line-0{
   
   left: 200%;
-  top: -30px;
+  top: 12px;
   transition: 1s;
   animation: move-to-left-line 2s linear forwards;
   animation-delay: .6s;
@@ -151,7 +150,7 @@ body{
 .first-screen__test-inner .line-1{
   left: -150%;
   width: 100%;
-  top: -30px;
+  top: -10px;
   background: linear-gradient(90deg, transparent, #554CAB);
   
 }
@@ -164,7 +163,7 @@ body{
   width: 3px;
   height: 100%;
   top: -150%;
-  right: -30px;
+  right: -10px;
   background: linear-gradient(180deg, transparent, #554CAB);
   
 }
@@ -179,7 +178,7 @@ body{
   right: -150%;
   width: 100%;
   top: unset;
-  bottom: -30px;
+  bottom: -10px;
   background: linear-gradient(270deg, transparent, #554CAB);
   
 }
@@ -193,7 +192,7 @@ body{
   width: 3px;
   height: 100%;
   bottom: -150%;
-  left: -30px;
+  left: -10px;
   background: linear-gradient(3600deg, transparent, #554CAB);
   
 }
@@ -208,7 +207,7 @@ body{
   height: 10px;
   position: absolute;
   left: 5000px;
-  top: -20px;
+  top: 23px;
   background: #554CAB;
   animation: move-to-left 1.8s linear forwards;
   animation-delay: .5s;
@@ -287,11 +286,17 @@ body{
   align-items: center;
   justify-content: space-between;
 }
-
+.about-company__img{
+  animation-timing-function: cubic-bezier(1, 2.63, 0.68, 0.32);
+  animation-duration: 2.3s;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 89% 100%, 0 100%, 0% 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 89% 100%, 0 100%, 0% 50%);
+}
 .about-company__content{
   max-width: 416px;
   width: 100%;
   color: #fff;
+  animation-duration: 1.9s;
 }
 .about-company__content-title{
   font-family: Rosatom-Bold;
@@ -320,7 +325,125 @@ body{
 }
 
 
+.mission{
+  padding-bottom: 88px;
+}
+.mission__rectangle{
+  padding: 86px 156px 135px 159px;
+  width: 100%;
+  background: linear-gradient(287.48deg, #30EDD9 -51.18%, #0082BA 61.35%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 95% 100%, 0 100%, 0% 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 95% 100%, 0 100%, 0% 50%);
+}
+.mission__rectangle-title{
+  font-family: Rosatom-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 55px;
+}
+.mission__rectangle-text{
+  max-width: 816px;
+  width: 100%;
+  font-family: Rosatom-Light;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 36px;
+  line-height: 47px;
+  letter-spacing: -0.015em;
+  color: #FFFFFF;
+  padding: 26px 0 12px;
+position: relative;
+}
 
+.mission__line-top-left{
+  position: absolute;
+  width: 600px;
+  height: 2px;
+  background-color: greenyellow;
+  left: 0;
+  top: 0;
+}
+
+/* .mission__rectangle-text::after{
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background-color: greenyellow;
+  left: 0;
+  top: 0;
+  
+} */
+
+.mission__line-top-right{
+  position: absolute;
+  background-color: greenyellow;
+  width: 190px;
+  height: 6px;
+  right: 43px;
+  top: -12px;
+  -webkit-clip-path: polygon(4% 0, 95% 0, 100% 100%, 0% 100%);;
+  clip-path: polygon(4% 0, 95% 0, 100% 100%, 0% 100%);
+}
+/* .mission__rectangle-text::before{
+  content: '';
+  position: absolute;
+  background-color: greenyellow;
+  width: 190px;
+  height: 6px;
+  right: 43px;
+  top: -12px;
+  -webkit-clip-path: polygon(4% 0, 95% 0, 100% 100%, 0% 100%);;
+  clip-path: polygon(4% 0, 95% 0, 100% 100%, 0% 100%);;
+} */
+
+.mission__line-bottom-left{
+  position: absolute;
+  width: 600px;
+  height: 2px;
+  background-color: greenyellow;
+  right: 43px;
+  bottom: 0;
+}
+/* .mission__rectangle-text p::after{
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 2px;
+  background-color: greenyellow;
+  right: 43px;
+  bottom: 0;
+  
+} */
+
+.mission__line-bottom-right{
+  position: absolute;
+  background-color: greenyellow;
+  width: 190px;
+  height: 6px;
+  left: 0;
+  transform: rotate(180deg);
+  bottom: -12px;
+  -webkit-clip-path: polygon(4% 0, 95% 0, 100% 100%, 0% 100%);;
+  clip-path: polygon(4% 0, 95% 0, 100% 100%, 0% 100%);
+}
+/* .mission__rectangle-text p::before{
+  content: '';
+  position: absolute;
+  background-color: greenyellow;
+  width: 190px;
+  height: 6px;
+  left: 0;
+  transform: rotate(180deg);
+  bottom: -12px;
+  -webkit-clip-path: polygon(4% 0, 95% 0, 100% 100%, 0% 100%);;
+  clip-path: polygon(4% 0, 95% 0, 100% 100%, 0% 100%);;
+} */
 
 
 

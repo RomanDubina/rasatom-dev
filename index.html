@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -89,14 +90,14 @@
       <section class="about-company">
         <!-- <div class="container"> -->
         <div class="about-company__inner">
-          <div class="about-company__img">
+          <div class="about-company__img wow slideInLeft" data-wow-offset="400">
             <img
               class="about-company__img-image"
               src="images/about-img.jpg"
               alt="Изображение"
             />
           </div>
-          <div class="about-company__content">
+          <div class="about-company__content wow slideInRight" data-wow-offset="500">
             <div class="about-company__content-title">
               О компании <span>Росатом</span>
             </div>
@@ -121,9 +122,26 @@
         </div>
         <!-- </div> -->
       </section>
+      <section class="mission">
+        <div class="container">
+          <div class="mission__inner">
+            <div class="mission__rectangle wow flipInX" data-wow-offset="400">
+              <div class="mission__rectangle-title">Миссия  Росатома</div>
+              <div class="mission__rectangle-text">
+                <span class="mission__line-top-left wow fadeInLeftBig" data-wow-offset="300"></span>
+                <span class="mission__line-top-right"></span>
+                <p>Достижения ядерной науки и высокие современные технологии на службу людям.</p>
+                <span class="mission__line-bottom-left wow fadeInRightBig" data-wow-offset="200"></span>
+                <span class="mission__line-bottom-right"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

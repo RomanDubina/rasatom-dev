@@ -5,6 +5,11 @@
    }
    @font-face {
     font-family: Rosatom-Regular;
-    src: url(../fonts/RST45.ttf);
+    src: url(../fonts/RST55.ttf);
     font-weight: 400;
+   }
+   @font-face {
+    font-family: Rosatom-Light;
+    src: url(../fonts/RST45.ttf);
+    font-weight: 350;
    }

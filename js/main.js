@@ -19,5 +19,5 @@ $(function(){
     
        } 
 
-
+       new WOW().init();
 });
