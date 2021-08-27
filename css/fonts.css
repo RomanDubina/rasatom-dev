@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Rosatom-Bold;
+    src: url(../fonts/RST75.ttf);
+    font-weight: bold;
+   }
+   @font-face {
+    font-family: Rosatom-Regular;
+    src: url(../fonts/RST45.ttf);
+    font-weight: 400;
+   }
