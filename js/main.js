@@ -8,6 +8,8 @@ $(function(){
        
         header.style.top = '-200px'
         header.style.backgroundColor = '#0F1435'
+     } else if(scrollPos == 0) {
+      header.style.backgroundColor = 'unset'
      } else {
         header.style.backgroundColor = '#0F1435'
         header.style.top = '0px'
