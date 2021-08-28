@@ -1,0 +1,72 @@
+@keyframes an-for-line-5{
+    0%{
+      opacity: 0;
+    }
+    25%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0;
+    }
+    75%{
+      opacity: 1;
+    }
+    85%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  @keyframes an-first-screen__test-decor2{
+    from{
+      right: 33px;
+      bottom: 43px;
+    }
+    to{
+      right: 63px;
+      bottom: 20px;
+    }
+  }
+  @keyframes move-to-left-test {
+    0%{
+      left: 200%;
+    }
+    40%{
+      left: 54%;
+    }
+    70%{
+      left: 80%;
+    }
+    100%{
+      left: 54%;
+    }
+  }
+  @keyframes move-to-left-line {
+    0%{
+      left: 200%;
+    }
+    40%{
+      left: 0%;
+    }
+    70%{
+      left: 30%;
+    }
+    100%{
+      left: 10%;
+    }
+  }
+  @keyframes move-to-left {
+    0%{
+      left: 5000px;
+    }
+    80%{
+      left: 0;
+    }
+    90%{
+      left: 50px;
+    }
+    100%{
+      left: 0;
+    }
+  }
